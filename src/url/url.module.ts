@@ -7,8 +7,6 @@ import { QueueService } from './queue.service';
 import { QueueProcessor } from './queue.processer';
 import { BullModule } from '@nestjs/bullmq';
 
-console.log('Redis URL:', process.env.REDIS_URI);
-
 @Module({
   imports: [
     MongooseModule.forFeature([{ name: Url.name, schema: UrlSchema }]),

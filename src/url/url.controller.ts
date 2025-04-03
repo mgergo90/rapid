@@ -46,6 +46,7 @@ export class UrlController {
     res.redirect(url.originalUrl);
   }
 
+  @UseGuards(ApiKeyGuard)
   @Get('analitycs/:alias')
   async analitycs(@Param('alias') alias: string) {
     const url = await this.urlService.getUrl(alias);
