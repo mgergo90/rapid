@@ -1,6 +1,8 @@
 ## How the system can handle high concurrency.
 
-We already have the rate limiting, creating new url entries also can be done in queues, we can use multiple databases.
+- We already have the rate limiting
+- Creating new url entries also can be done in queues
+- We can use multiple databases.
 
 ## Approaches to distributed rate-limiting.
 

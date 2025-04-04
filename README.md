@@ -7,6 +7,8 @@
 ```bash
 $ cp .env.example .env
 $ docker compose up -d
+# Setup git hooks with husky
+$ npx husky
 ```
 
 ## How will you structure relationships between users, API keys, shortened URLs, and analytics?
